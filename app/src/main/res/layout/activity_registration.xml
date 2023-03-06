@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".RegistrationActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="316dp"
+        android:layout_height="322dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <EditText
+            android:id="@+id/telText"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/levelText"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/dateOfBirthText"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/fatherName"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="7"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:text="Father's Name :"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dateOfBirth"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:text="Date of Birth :"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:text="E -mail :"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:text="Tel/Mobile :"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:text="Level :"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/motherName"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:text="Mother's Name :"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/motherNameText"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:text="Student Name :"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/studentNameText"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/fatherNameText"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="7"
+            android:layout_column="1"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="save"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="398dp"
+        android:onClick="selectImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2"
+        app:srcCompat="@drawable/selectimage" />
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="322dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/dateText"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="209dp"
+            tools:layout_editor_absoluteY="-3dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="Date :"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="-3dp" />
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
